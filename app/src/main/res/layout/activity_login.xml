@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:src="@drawable/stkfood_logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/Login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_outlet_name"
+                android:layout_width="263dp"
+                android:layout_height="53dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="214dp"
+                    android:layout_height="43dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="300dp"
+                    android:drawableLeft="@drawable/ic_login"
+                    android:drawablePadding="@dimen/dp2"
+                    android:hint="Enter Your Name"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt_outlet_name1"
+                android:layout_width="263dp"
+                android:layout_height="53dp"
+                android:layout_below="@+id/txt_outlet_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/userPassword"
+                    android:layout_width="214dp"
+                    android:layout_height="43dp"
+                    android:layout_alignEnd="@+id/imageView2"
+                    android:layout_alignRight="@+id/imageView2"
+                    android:layout_below="@+id/txt_outlet_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="22dp"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="@dimen/dp2"
+                    android:hint="Enter Your Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/chkShowPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_outlet_name1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/showPassword" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chkShowPass"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:text="Forgot Password?" />
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="@dimen/dp250"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/button_background"
+                android:text="@string/Login"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

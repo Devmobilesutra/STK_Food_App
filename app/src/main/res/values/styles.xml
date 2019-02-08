@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/NunentoText</item>
+        <item name="android:editTextStyle">@style/NunentoEdit</item>
+        <item name="android:spinnerStyle">@style/Nunentospinner</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+    <!-- <style name="EditLabelName" parent="">
+         &lt;!&ndash; Customize your theme here. &ndash;&gt;
+         <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/edit_name_lable</item>
+     </style>-->
+
+    <style name="NunentoText" parent="android:Widget.TextView">
+
+        <item name="android:fontFamily">@fonts/Munito_Regular</item>
+    </style>
+
+    <style name="NunentoEdit" parent="android:Widget.EditText">
+
+        <item name="android:fontFamily">@fonts/Nunito_Regular</item>
+    </style>
+
+    <style name="Nunentospinner" parent="android:Widget.Spinner">
+
+        <item name="android:fontFamily">@fonts/Nunito_Regular</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/border_background</item>
+    </style>
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5"
+    android:background="@drawable/border_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_order_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/background_change">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:layout_toLeftOf="@+id/btnAddToCart"
+                    android:text="Pudina Rosted Makhana safsdafsdf"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_up_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_down" />
+
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/layer_list"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/addToOrder"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp5"
+                    android:layout_below="@+id/btnAddToCart"
+                    android:layout_marginRight="@dimen/dp1"
+                    android:background="@color/brown" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_background"
+                android:visibility="gone"
+                android:weightSum="100"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProductRs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:gravity="center"
+                        android:text="100/- per pack"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/ivProductImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tvProductUOM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="100 mg"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="65"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/remark_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:text="Distributer Stock 29-03-2018 is 2"
+
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/remark_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:text="Distributer Stock 29-03-2018 is 2"
+
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/remark_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:text="Distributer Stock 29-03-2018 is 2"
+
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLastDateStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="Distributer Stock 29-03-2018 is 2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvLastOrderDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+
+                        android:text="Last Order Date:- "
+
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp5"
+        android:weightSum="90">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@drawable/layer_list"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:gravity="center"
+                android:text="Order"
+                android:textColor="@color/brown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ivOrderMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus_36" />
+
+
+                <EditText
+                    android:id="@+id/tvOrderQty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/.."
+                    android:nextFocusLeft="@+id/.."
+                    android:nextFocusRight="@+id/.."
+                    android:nextFocusUp="@+id/.."
+                    android:padding="@dimen/dp2"
+                    android:textColor="@color/brown"
+                    android:textColorHint="@color/brown"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivOrderPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:src="@drawable/ic_add_36dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@drawable/layer_list"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:gravity="center"
+                android:text="Stock"
+                android:textColor="@color/brown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ivStockMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus_36" />
+
+
+                <EditText
+                    android:id="@+id/tvStockQty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/.."
+                    android:nextFocusLeft="@+id/.."
+                    android:nextFocusRight="@+id/.."
+                    android:nextFocusUp="@+id/.."
+                    android:padding="@dimen/dp2"
+                    android:textColor="@color/brown"
+                    android:textColorHint="@color/brown"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivStockPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_add_36dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@drawable/layer_list"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:gravity="center"
+
+                android:text="Reject"
+                android:textColor="@color/brown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ivRejectMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus_36" />
+
+
+                <EditText
+                    android:id="@+id/tvRejectQty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/.."
+                    android:nextFocusLeft="@+id/.."
+                    android:nextFocusRight="@+id/.."
+                    android:nextFocusUp="@+id/.."
+                    android:padding="@dimen/dp2"
+                    android:textColor="@color/brown"
+                    android:textColorHint="@color/brown"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivRejectPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_add_36dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp2"
+        android:gravity="center"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.stk.orderingapp.Activity.ActivityDashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/layout_header" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewDistributerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="@dimen/dp3"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_add_shop"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp3"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="@dimen/dp5"
+            android:src="@drawable/fab_create_shop"/>
+
+        <LinearLayout
+            android:id="@+id/lineImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgPrev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp20" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.stk.orderingapp.drawer.ScrimInsetsFrameLayout
+        android:id="@+id/scrimInsetsFrameLayout"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:elevation="10dp"
+        app:insetForeground="#4000">
+
+        <fragment
+            android:id="@+id/fragment_drawer"
+            android:name="com.stk.orderingapp.drawer.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+    </com.stk.orderingapp.drawer.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>

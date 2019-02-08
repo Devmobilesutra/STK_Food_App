@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_margin="@dimen/dp10"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img_shop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_camera"/>
+            <TextView
+                android:id="@+id/savedMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_shop"
+                android:gravity="center"
+                android:text="Click camera to take a photo"
+                android:layout_marginBottom="@dimen/dp10"
+                android:textColor="@color/black" />
+
+
+
+            <!--android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/savedMessage"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/edt_shop_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Enter Shop ID"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout-->
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/edt_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Enter Shop Name"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <!--Spinner
+                android:id="@+id/spinnRoute"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="bounds"
+                android:textColor="@color/white" /-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/txt_route_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Route Name"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--View
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"/-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/edt_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Enter Mobile No."
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Enter Email ID"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Enter Address Of Shop"
+                    android:selectAllOnFocus="false"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="Enter City Of Shop"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:layout_marginBottom="@dimen/dp15"
+                android:background="@drawable/button_background"
+                android:text="Create"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

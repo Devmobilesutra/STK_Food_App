@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">STK Ordering App</string>
+    <string name="notificaionHeader">Notifications</string>
+    <string name="version_upgrade">New version available</string>
+    <string name="order_booking">Dist Name</string>
+    <string name="transition">transit</string>
+    <string name="orderPrev">Order Preview</string>
+
+    <string name="order">Order</string>
+    <string name="stock">Stocks</string>
+    <string name="reject">Reject</string>
+    <string name="submitOrder">Submit Order</string>
+    <string name="addToOrder">Add Item</string>
+    <string name="error">Please Try Again Later…</string>
+    <string name="noOrderDetails">Please Add Product And Then Try Again… </string>
+    <string name="internet_connection">Please Check Your Internet Connection. Then Try… </string>
+    <string name="orderSubmittedSuccessfully">Order Submitted Successfully...</string>
+    <string name="Login">Login</string>
+    <string name="noOrderDetailsError">No Items are Added... Please Add Some Items and Then Try..</string>
+    <string name="WelcomeText">STK FOOD PROCESSING PVT. LTD.</string>
+    <string name="showPassword">Show Password</string>
+    <string name="exitMessage">Do you Want to Exit?</string>
+    <string name="callMessage">Do you Want to Call?</string>
+    <string name="sync_orders">Sync Orders</string>
+    <string name="sync_shop_list">Sync Shop Details</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="txtNotification">Notifications</string>
+    <string name="addPhotoandRemark">Add Photo and Remark</string>
+    <string name="title_activity_shop_set_map">Map</string>
+    <string name="register_shop">Register Shop</string>
+    <string name="update_shop">Update Shop</string>
+    <string name="attendance">Attendance report</string>
+    <!--    <string name="internet_connection">Please Check Your Internet Connection. Then Try… This Order will Send to Server When Internet is Available</string>-->
+    <!--string name="google_maps_key">AIzaSyBoyJIndIRX-rrOCsnQ83_Ma0cKNjMcmic</string-->
+</resources>

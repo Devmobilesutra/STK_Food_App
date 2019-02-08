@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_order_booking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pudina Rosted Makhana"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20sp" />
+
+            <ImageView
+                android:id="@+id/imgEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_toLeftOf="@id/imgDelete"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:tint="@color/edit_name_lable" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:tint="@color/edit_name_lable" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/imgDelete"
+                android:background="@drawable/border_background"
+                android:weightSum="100"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivProductImage"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="65"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:orientation="vertical"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tvProductRs1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/order"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp" />
+
+                            <TextView
+                                android:id="@+id/tvOrderQty"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="100"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp"
+                                android:gravity="center"/>
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:layout_weight="1"
+                                android:text="Packets"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tvProductRs111"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/stock"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvStockQty"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="100"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp"
+                                android:gravity="center"/>
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:layout_weight="1"
+                                android:text="Packets"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tvProductRs11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/reject"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp" />
+
+                            <TextView
+                                android:id="@+id/tvRejectQty"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="100"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp" />
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:layout_weight="1"
+                                android:text="Packets"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_18sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:visibility="gone"
+        android:weightSum="90">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@drawable/layer_list"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:gravity="center"
+
+                android:text="Order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ivOrderMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus" />
+
+
+                <TextView
+                    android:id="@+id/tvOrderQty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivOrderPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_plus" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:background="@drawable/layer_list"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:gravity="center"
+
+                android:text="Stock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ivStockMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus" />
+
+
+                <TextView
+                    android:id="@+id/tvStockQty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivStockPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_plus" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:gravity="center"
+
+                android:text="Reject"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:weightSum="3"
+
+                >
+
+                <ImageView
+                    android:id="@+id/ivRejectMinus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus" />
+
+
+                <TextView
+                    android:id="@+id/tvRejectQty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivRejectPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_plus" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp2"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+            android:background="@drawable/border_background"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:text="Add to cart"
+            android:textColor="@color/black" />
+    </LinearLayout>-->
+</LinearLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:id="@+id/linearRecyclerView"
+       >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_order_booking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginTop="@dimen/dp5"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="65"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pudina Rosted Makhana"
+
+                        android:textSize="@dimen/text_18sp" />
+
+                    <TextView
+                        android:id="@+id/tvRs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="100/- per pack" />
+
+                    <TextView
+                        android:id="@+id/tvUOM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100 mg" />
+
+                    <TextView
+                        android:id="@+id/tvDistStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Distributer Stock 29-03-2018 is 2" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    -->
